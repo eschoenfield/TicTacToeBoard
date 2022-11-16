@@ -15,4 +15,14 @@ class TicTacToeBoardTest : public ::testing::Test
 };
 
 
-
+TEST(TicTacToeBoardTest, smoke_test) //example
+{
+    ASSERT_TRUE(true);
+}
+TEST(TicTacToeBoardTest, xStartsFirst) //allnighter
+{
+	//can't test on private member variables
+    TicTacToeBoard myPractice;
+	myPractice.TicTacToeBoard(); 
+	ASSERT_EQ(myPractice.turn, X);
+}
